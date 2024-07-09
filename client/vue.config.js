@@ -2,6 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
+    allowedHosts: 'all',
     proxy: {
       // Proxy requests starting with /api to the target server
       '/api': {
